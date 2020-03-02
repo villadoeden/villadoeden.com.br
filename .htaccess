@@ -1,0 +1,108 @@
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+<IfModule pagespeed_module>
+    ModPagespeed off
+</IfModule>
+
+ServerSignature Off
+
+<IfModule mod_headers.c>
+  Header unset ETag
+</IfModule>
+
+FileETag None
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresDefault                          "access plus 1 week"
+	ExpiresByType text/cache-manifest       "access plus 0 seconds"
+
+	# Html
+	ExpiresByType text/html                 "access plus 0 seconds"
+
+	# Data
+	ExpiresByType text/xml                  "access plus 0 seconds"
+	ExpiresByType application/xml           "access plus 0 seconds"
+	ExpiresByType application/json          "access plus 0 seconds"
+
+	# Feed
+	ExpiresByType application/rss+xml       "access plus 1 hour"
+	ExpiresByType application/atom+xml      "access plus 1 hour"
+
+	# Favicon
+	ExpiresByType image/x-icon              "access plus 1 month"
+
+	# Media: images, video, audio
+	ExpiresByType image/gif                 "access plus 1 week"
+	ExpiresByType image/png                 "access plus 1 week"
+	ExpiresByType image/jpg                 "access plus 1 week"
+	ExpiresByType image/jpeg                "access plus 1 week"
+	ExpiresByType video/ogg                 "access plus 1 week"
+	ExpiresByType audio/ogg                 "access plus 1 week"
+	ExpiresByType video/mp4                 "access plus 1 week"
+	ExpiresByType video/webm                "access plus 1 week"
+
+	# HTC files
+	ExpiresByType text/x-component          "access plus 1 month"
+
+	# Webfonts
+	ExpiresByType application/x-font-ttf    "access plus 1 month"
+	ExpiresByType font/opentype             "access plus 1 month"
+	ExpiresByType application/x-font-woff   "access plus 1 month"
+	ExpiresByType image/svg+xml             "access plus 1 month"
+	ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+
+	# CSS / JS
+	ExpiresByType text/css                  "access plus 1 week"
+	ExpiresByType application/javascript    "access plus 1 month"
+
+</IfModule>
+
+<ifModule mod_deflate.c>
+    <filesMatch "\.(js|css|html|php)$">
+        AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+    </filesMatch>
+ </ifModule>
+
+
+<IfModule mod_rewrite.c>
+
+    Options -Indexes
+
+    ErrorDocument 404 https://www.villadoeden.com.br/404/
+    ErrorDocument 403 https://www.villadoeden.com.br/404/
+
+    #Force www:
+    RewriteEngine on
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP_HOST} ^(www\.)?villadoeden.com.br
+    RewriteRule ^.*$ https://www.villadoeden.com.br%{REQUEST_URI} [R,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} (.*)$
+
+    RewriteRule ^b2b?$ b2b/login.php [NC,L]
+
+	RewriteRule ^404?$ 404.php [NC,L]
+	RewriteRule ^villadoeden?$ villadoeden.php [NC,L]
+	RewriteRule ^acomodacoes?$ acomodacoes.php [NC,L]
+	RewriteRule ^lazer?$ lazer.php [NC,L]
+	RewriteRule ^cafe-manha?$ cafe.php [NC,L]
+	RewriteRule ^promocoes?$ promocoes.php [NC,L]
+	RewriteRule ^promocoes/([a-z0-9-]+)/([a-z0-9-]+)/?$ promocoes.php?id=$1&cat=$2 [NC]
+	RewriteRule ^eventos?$ eventos.php [NC,L]
+	RewriteRule ^contato?$ contato.php [NC,L]
+	RewriteRule ^sitio?$ sitio.php [NC,L]
+	RewriteRule ^parceiros?$ parceiros.php [NC,L]
+	RewriteRule ^avaliacoes?$ avaliacoes.php [NC,L]
+	RewriteRule ^faleconosco?$ contato.php [NC,L]
+	RewriteRule ^avaliacao?$ avaliacao.php [NC,L]
+
+	RewriteRule ^obrigado-contato?$ obrigado-contato.php [NC,L]
+	RewriteRule ^obrigado-cotacao?$ obrigado-cotacao.php [NC,L]
+	RewriteRule ^obrigado-cadastro?$ obrigado-cadastro.php [NC,L]
+
+
+</IfModule>

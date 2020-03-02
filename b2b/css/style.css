@@ -1,0 +1,156 @@
+
+
+#loginContainer {
+    position:relative;
+    float:none;
+}
+
+#loginButton { 
+    display:inline-block;
+	background:#007CC3;
+	color:#fff;
+	font-size:16px;
+	border:none;
+	padding:10px;
+    position:relative;
+    z-index:30;
+    cursor:pointer;
+}
+
+
+#loginButton:hover {
+    background:#007CC3;
+	color:#fff;
+	text-decoration:none;
+}
+
+/* Login Box */
+#loginBox {
+    position:absolute;
+    top:42px;
+    right:0;
+    display:none;
+    z-index:29;
+}
+
+/* If the Login Button has been clicked */    
+#loginButton.active {
+    border-radius:0;
+}
+
+#loginButton.active span {
+    background-position:53px -76px;
+}
+
+/* A Line added to overlap the border */
+#loginButton.active em {
+    position:absolute;
+    width:100%;
+    background:#d2e0ea;
+}
+
+/* Login Form */
+#loginForm {
+    width:230px; 
+    background:#007CC3;
+    padding:6px;
+}
+#loginForm fieldset {
+    margin:0 0 12px 0;
+    display:block;
+    border:0;
+    padding:0;
+}
+#signupForm {
+    width:80%; 
+    background:#d2e0ea;
+    padding:6px;
+}
+
+#signupForm fieldset {
+    margin:0 0 12px 0;
+    display:block;
+    border:0;
+    padding:0;
+}
+
+fieldset#body {
+    background:#fff;
+    padding:10px 13px;
+    margin:0;
+}
+
+#loginForm #checkbox {
+    width:auto;
+    margin:1px 9px 0 0;
+    float:left;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+#signupForm #checkbox {
+    width:auto;
+    margin:1px 9px 0 0;
+    float:left;
+    padding:0;
+    border:0;
+    *margin:-3px 9px 0 0; /* IE7 Fix */
+}
+
+#body label {
+    color:#3a454d;
+    margin:9px 0 0 0;
+    display:block;
+    float:left;
+}
+
+#loginForm #body fieldset label {
+    display:block;
+    float:none;
+    margin:0 0 6px 0;
+}
+
+#signupForm #body fieldset label {
+    display:block;
+    float:none;
+    margin:0 0 6px 0;
+}
+
+/* Default Input */
+#loginForm input {
+    width:100%;
+    -moz-border-radius:3px;
+    color:#333;
+    padding:8px 8px;
+	border:1px solid #ccc;
+}
+/* Sign In Button */
+#loginForm #login {
+    width:auto;
+    float:left;
+    background:#007CC3;
+    color:#fff;
+	border:none;
+    box-shadow:none;
+    margin:0 12px 0 0;
+    cursor:pointer;
+    *padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+
+/* Forgot your password */
+#loginForm span {
+    text-align:center;
+    display:block;
+    padding:7px 0 0 0;
+}
+
+#loginForm span a {
+    color:#fff;
+}
+
+input:focus {
+    outline:none;
+}
+
+

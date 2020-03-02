@@ -1,0 +1,5 @@
+User-agent: *
+Sitemap: http://www.villadoeden.com.br/sitemap.xml
+Disallow: /404
+
+Allow: /

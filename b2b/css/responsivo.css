@@ -1,0 +1,967 @@
+@media (min-width: 240px) and (max-width: 320px) {
+.logotipo{
+	text-align:center;
+	}	
+
+.input-busca{
+	margin-top:-1px;
+	}
+
+.botao-login{
+	width:152px;
+	margin:0 auto;
+	}
+
+.banner-dir-home{
+	max-width:420px;
+	position:relative;
+	}
+
+.menu-categorias {
+        width:206px;
+        margin:0 auto;
+        }        
+        
+.menu-categorias li{
+	width:100px;
+	color:#666;
+	margin:0 3px 3px 0;
+	float:left;
+	list-style:none;
+	text-align:center;
+	}      
+        
+#container .list li {
+	width:100%;
+	min-height:172px;
+	padding:10px;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	margin-bottom:20px;
+	text-align:center;
+	}
+        
+#container .list li .icone-sobrepondo{
+        width:0;
+        height:0;
+        position:absolute;
+        margin:0;
+        visibility:hidden;
+        }   
+        
+#container .list li .faixa-destaque{
+	width:62px;
+	height:62px;
+	background:url(../img/etc/destaque.png);
+	position:absolute;
+	right:8px;
+	margin-top:-18px;
+	}
+        
+#container .list li .anuncio-destaque{
+        background:#EEFFDD;
+         }
+        
+#container .list li .img-anuncio img{
+	width:100%;
+	margin:0 auto;
+	float:none;
+	padding-right:0;
+	}
+
+#container .list li  h4{
+	padding:30px 0 10px 0;
+	margin:0;
+	}
+
+#container .list li  small{
+	color:#999;
+	}
+
+#container .list li  span{
+	font-size:18px;
+	color:#C00;
+	}
+
+#container .list li  p{
+	padding:0;
+	margin:0;
+	}
+
+#container .grid li {
+	width:100%;
+	margin:0%;
+	float:left;
+	height:350px;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	margin-bottom:20px;
+	text-align:center;
+	overflow:hidden;
+	}
+
+#container .grid li .icone-sobrepondo{
+          width:54px;
+          height:71px;
+          position:absolute;
+          margin:230px 0 0 70px;
+        }
+          
+#container .grid li .faixa-destaque{
+	width:62px;
+	height:62px;
+	position:absolute;
+	right:8px;
+	margin-top:-8px;
+	}
+        
+#container .grid li .anuncio-destaque{
+        background:#EEFFDD;
+         }
+         
+#container .grid li .img-anuncio{
+	width:100%;
+	float:none;
+	padding-right:0;
+	}
+
+#container .grid li .img-anuncio img{
+	width:100%;
+	}
+
+#container .grid li  h4{
+        font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	padding:20px 0 0 0;
+	margin:0;
+        color:#999;
+	}
+
+#container .grid li  h6{
+	font-size:15px;
+        color:#999;
+        font-weight:100;
+        padding:0 8px 0 8px;
+        visibility:hidden;
+	}
+        
+#container .grid li  span{
+	font-size:18px;
+	color:#C00;
+	}
+
+#container .grid li  p{
+	visibility:hidden;
+	height:0;
+	width:0;
+	padding:0;
+	margin:0;
+	}
+
+.foto-topo-in{
+	visibility:hidden;
+	height:30px;
+	}
+
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+.logotipo{
+	text-align:center;
+	}	
+
+.input-busca{
+	margin-top:-1px;
+	}
+
+.botao-login{
+	width:152px;
+	margin:0 auto;
+	}
+
+.banner-dir-home{
+	max-width:420px;
+	position:relative;
+	}
+
+.menu-categorias {
+        width:206px;
+        margin:0 auto;
+        }        
+        
+.menu-categorias li{
+	width:100px;
+	color:#666;
+	margin:0 3px 3px 0;
+	float:left;
+	list-style:none;
+	text-align:center;
+	}      
+        
+#container .list li {
+	width:100%;
+	min-height:172px;
+	padding:10px;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	margin-bottom:20px;
+	text-align:center;
+	}
+        
+#container .list li .icone-sobrepondo{
+        width:0;
+        height:0;
+        position:absolute;
+        margin:0;
+        visibility:hidden;
+        }   
+        
+#container .list li .faixa-destaque{
+	width:62px;
+	height:62px;
+	background:url(../img/etc/destaque.png);
+	position:absolute;
+	right:8px;
+	margin-top:-18px;
+	}
+        
+#container .list li .anuncio-destaque{
+        background:#EEFFDD;
+         }
+        
+#container .list li .img-anuncio img{
+	width:100%;
+	margin:0 auto;
+	float:none;
+	padding-right:0;
+	}
+
+#container .list li  h4{
+	padding:30px 0 10px 0;
+	margin:0;
+	}
+
+#container .list li  small{
+	color:#999;
+	}
+
+#container .list li  span{
+	font-size:18px;
+	color:#C00;
+	}
+
+#container .list li  p{
+	padding:0;
+	margin:0;
+	}
+
+#container .grid li {
+	width:100%;
+	margin:0.5%;
+	float:left;
+	height:520px;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	margin-bottom:20px;
+	text-align:center;
+	overflow:hidden;
+	}
+
+#container .grid li .icone-sobrepondo{
+          width:54px;
+          height:71px;
+          position:absolute;
+          margin:410px 0 0 150px;
+        }
+          
+#container .grid li .faixa-destaque{
+	width:62px;
+	height:62px;
+	position:absolute;
+	right:8px;
+	margin-top:-8px;
+	}
+        
+#container .grid li .anuncio-destaque{
+        background:#EEFFDD;
+         }
+         
+#container .grid li .img-anuncio{
+	width:100%;
+	float:none;
+	padding-right:0;
+	}
+
+#container .grid li .img-anuncio img{
+	width:100%;
+	}
+
+#container .grid li  h4{
+        font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	padding:20px 0 0 0;
+	margin:0;
+        color:#999;
+	}
+
+#container .grid li  h6{
+	font-size:15px;
+        color:#999;
+        font-weight:100;
+        padding:0 8px 0 8px;
+        visibility:hidden;
+	}
+        
+#container .grid li  span{
+	font-size:18px;
+	color:#C00;
+	}
+
+#container .grid li  p{
+	visibility:hidden;
+	height:0;
+	width:0;
+	padding:0;
+	margin:0;
+	}
+
+.foto-topo-in{
+	visibility:hidden;
+	height:30px;
+	}
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+.logotipo{
+	text-align:center;
+	}
+
+.input-busca{
+	margin-top:-1px;
+	}
+
+
+.botao-login{
+	width:152px;
+	margin:0 auto;
+	}
+
+
+.banner-dir-home{
+	max-width:420px;
+	position:relative;
+
+	}
+	
+.menu-categorias li{
+	width:100px;
+	color:#666;
+	margin:0 8px 8px 0;
+	float:left;
+	list-style:none;
+	text-align:center;
+	}	
+
+#container .list li {
+	width:100%;
+	min-height:172px;
+	padding:10px;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	margin-bottom:20px;
+	text-align:center;
+	}
+
+#container .list li .icone-sobrepondo{
+          width:0;
+          height:0;
+          position:absolute;
+          margin:0;
+          visibility:hidden;
+        }           
+        
+#container .list li .faixa-destaque{
+	width:62px;
+	height:62px;
+	background:url(../img/etc/destaque.png);
+	position:absolute;
+	right:8px;
+	margin-top:-18px;
+	}
+#container .list li .anuncio-destaque{
+        background:#EEFFDD;
+         }
+#container .list li .img-anuncio img{
+	width:100%;
+	margin:0 auto;
+	float:none;
+	padding-right:0;
+	}
+
+#container .list li  h4{
+	padding:30px 0 10px 0;
+	margin:0;
+	}
+
+#container .list li  small{
+	color:#999;
+	}
+
+#container .list li  span{
+	font-size:18px;
+	color:#C00;
+	}
+
+#container .list li  p{
+	padding:0;
+	margin:0;
+	}
+
+#container .grid li {
+	width:32%;
+	margin:0.5%;
+	float:left;
+	height:290px;
+	padding:0;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	margin-bottom:20px;
+	text-align:center;
+	overflow:hidden;
+	 }
+
+#container .grid li .icone-sobrepondo{
+          width:54px;
+          height:71px;
+          position:absolute;
+          margin:170px 0 0 40px;
+        }         
+         
+#container .grid li .faixa-destaque{
+	width:62px;
+	height:62px;
+	position:absolute;
+	right:8px;
+	margin-top:-8px;
+	}
+        
+#container .grid li .anuncio-destaque{
+        background:#EEFFDD;
+         }
+         
+#container .grid li .img-anuncio{
+	width:100%;
+	float:none;
+	padding-right:0;
+	}
+
+#container .grid li .img-anuncio img{
+	width:100%;
+	}
+
+#container .grid li  h4{
+        font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	padding:20px 0 0 0;
+	margin:0;
+        color:#999;
+	}
+
+#container .grid li  h6{
+	font-size:15px;
+        color:#999;
+        font-weight:100;
+        padding:0 8px 0 8px;
+        visibility:hidden;
+	}
+
+#container .grid li  span{
+	font-size:18px;
+	color:#C00;
+	}
+
+#container .grid li  p{
+	visibility:hidden;
+	height:0;
+	width:0;
+	padding:0;
+	margin:0;
+	}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+.logotipo{
+	text-align:center;
+	}
+
+.input-busca{
+	margin-top:-1px;
+	}
+
+
+.botao-login{
+	width:152px;
+	margin:0 auto;
+	}
+
+.banner-dir-home{
+	max-width:420px;
+	position:relative;
+
+	}
+
+.menu-categorias li{
+	width:125px;
+	color:#666;
+	margin:0 5px 10px 5px;
+	float:left;
+	list-style:none;
+	text-align:center;
+	}
+
+#container .list li {
+	width:100%;
+	padding:0;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	margin-bottom:20px;
+	}
+            
+#container .list li .icone-sobrepondo{
+          width:0;
+          height:0;
+          position:absolute;
+          margin:0;
+          visibility:hidden;
+        }         
+                 
+        
+#container .list li .faixa-destaque{
+	width:62px;
+	height:62px;
+	background:url(../img/etc/destaque.png);
+	position:absolute;
+	right:8px;
+	margin-top:-8px;
+	}
+        
+#container .list li .anuncio-destaque{
+        background:#EEFFDD;
+         }
+         
+#container .list li .img-anuncio{
+	float:left;
+	padding-right:10px;
+	}       
+        
+#container .list li  h4{
+	padding:30px 0 10px 0;
+	margin:0;
+	}
+
+#container .list li  small{
+	color:#999;
+	}
+
+#container .list li  span{
+	font-size:18px;
+	color:#C00;
+	}
+
+#container .list li  p{
+	padding:0;
+	margin:0;
+	}
+
+#container .grid li  {
+	width:32%;
+	margin:0.5%;
+	float:left;
+	min-height:280px;
+	padding:0;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	text-align:center;
+}
+
+#container .grid li .icone-sobrepondo{
+          width:54px;
+          height:71px;
+          position:absolute;
+          margin:180px 0 0 50px;
+        }
+         
+#container .grid li .anuncio-destaque{
+        background:#EEFFDD;
+        
+}
+         
+#container .grid li .faixa-destaque{
+	width:62px;
+	height:62px;
+	position:absolute;
+	right:8px;
+	margin-top:-8px;
+	}
+
+#container .grid li .img-anuncio{
+	width:100%;
+	float:none;
+	padding-right:0;
+	}
+
+#container .grid li .img-anuncio img{
+	width:100%;
+        border-bottom:#ccc;
+	}
+
+#container .grid li  h4{
+	font-size:16px;
+	padding:10px 0 0 0;
+	margin:0;
+        color:#999;
+        font-weight: 500;
+	}
+
+#container .grid li  h6{
+	font-size:15px;
+        color:#999;
+        font-weight:100;
+        padding:0;
+        visibility:hidden;
+        display: none;
+	}
+
+#container .grid li  span{
+	font-size:12px;
+	color:#C00;
+	}
+
+#container .grid li  p{
+	visibility:hidden;
+	height:0;
+	width:auto;
+	padding:0;
+	margin:0;
+	}
+	
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+.input-busca{
+	margin-top:-3px;
+	}
+
+.logotipo{
+	text-align:center;
+	}
+
+
+.botao-login{
+	width:152px;
+	margin:0 auto;
+	position:relative;
+	top:-1px;
+	}
+
+.banner-dir-home{
+	max-width:420px;
+	position:relative;
+	}
+
+.menu-categorias li{
+	width:120px;
+	color:#666;
+	margin:0 5px 10px 5px;
+	float:left;
+	list-style:none;
+	text-align:center;
+	}
+
+#container .list li {
+	width:100%;
+	min-height:172px;
+	padding:0;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	margin-bottom:20px;
+	}
+
+#container .list li .faixa-destaque{
+	width:62px;
+	height:62px;
+	background:url(../img/etc/destaque.png);
+	position:absolute;
+	right:8px;
+	margin-top:-8px;
+	}
+#container .list li .anuncio-destaque{
+        background:#EEFFDD;
+         }
+#container .list li .img-anuncio{
+	float:left;
+	padding-right:10px;
+	}
+
+#container .list li  h4{
+	padding:30px 0 10px 0;
+	margin:0;
+	}
+
+#container .list li  small{
+	color:#999;
+	}
+
+#container .list li  span{
+	font-size:18px;
+	color:#C00;
+	}
+
+#container .list li  p{
+	padding:0;
+	margin:0;
+	}
+
+#container .grid li {
+	width:24%;
+	margin:0.5%;
+	float:left;
+	min-height:172px;
+	padding:0;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	margin-bottom:20px;
+	text-align:center;
+	 }   
+         
+
+#container .grid li .icone-sobrepondo{
+          width:54px;
+          height:71px;
+          position:absolute;
+          margin:160px 0 0 40px;
+        }         
+           
+        
+#container .grid li .faixa-destaque{
+	width:62px;
+	height:62px;
+	position:absolute;
+	right:8px;
+	margin-top:-8px;
+	}
+
+#container .grid li .anuncio-destaque{
+        background:#EEFFDD;
+         }        
+
+#container .grid li .anuncio-destaque{
+        background:#EEFFDD;
+         }         
+         
+#container .grid li .img-anuncio{
+	width:100%;
+	float:none;
+	padding-right:0;
+	}
+
+#container .grid li .img-anuncio img{
+	width:100%;
+	}
+
+#container .grid li  h4{
+        font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	padding:20px 0 0 0;
+	margin:0;
+        color:#999;
+	}
+
+#container .grid li  h6{
+	font-size:15px;
+        color:#999;
+        font-weight:100;
+        padding:0 8px 0 8px;
+        visibility:hidden;
+	}
+
+#container .grid li  span{
+	font-size:18px;
+	color:#C00;
+	}
+
+#container .grid li  p{
+	visibility:hidden;
+	height:0;
+	width:0;
+	padding:0;
+	margin:0;
+	}
+
+
+}
+
+@media (min-width: 1200px) {
+.banner-dir-home{
+	max-width:420px;
+	position:relative;
+	}
+      
+.menu-categorias{
+        width:750px;
+        margin:0 auto;
+        }        
+        
+.menu-categorias li{
+	width:100px;
+        height:100px;
+	color:#666;
+	margin:0 12px 24px 12px;
+	float:left;
+	list-style:none;
+	text-align:center;
+	}
+
+#container .list li {
+	width:100%;
+	padding:0;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	margin-bottom:20px;
+	}
+            
+#container .list li .icone-sobrepondo{
+          width:0;
+          height:0;
+          position:absolute;
+          margin:0;
+          visibility:hidden;
+        }         
+                 
+        
+#container .list li .faixa-destaque{
+	width:62px;
+	height:62px;
+	background:url(../img/etc/destaque.png);
+	position:absolute;
+	right:8px;
+	margin-top:-8px;
+	}
+        
+#container .list li .anuncio-destaque{
+        background:#EEFFDD;
+         }
+         
+#container .list li .img-anuncio{
+	float:left;
+	padding-right:10px;
+	}       
+        
+#container .list li  h4{
+	padding:30px 0 10px 0;
+	margin:0;
+	}
+
+#container .list li  small{
+	color:#999;
+	}
+
+#container .list li  span{
+	font-size:18px;
+	color:#C00;
+	}
+
+#container .list li  p{
+	padding:0;
+	margin:0;
+	}
+
+#container .grid li  {
+	width:24%;
+	margin:0.5%;
+	float:left;
+	min-height:280px;
+	padding:0;
+	border:thin solid #CCC;
+	list-style:none;
+	color:#333;
+	text-align:center;
+}
+
+#container .grid li .icone-sobrepondo{
+          width:54px;
+          height:71px;
+          position:absolute;
+          margin:160px 0 0 40px;
+        }
+         
+#container .grid li .anuncio-destaque{
+        background:#EEFFDD;
+        
+}
+         
+#container .grid li .faixa-destaque{
+	width:62px;
+	height:62px;
+	position:absolute;
+	right:8px;
+	margin-top:-8px;
+	}
+
+#container .grid li .img-anuncio{
+	width:100%;
+	float:none;
+	padding-right:0;
+	}
+
+#container .grid li .img-anuncio img{
+	width:100%;
+        border-bottom:#ccc;
+	}
+
+#container .grid li  h4{
+	font-size:16px;
+	padding:10px 0 0 0;
+	margin:0;
+        color:#999;
+        font-weight: 500;
+	}
+
+#container .grid li  h6{
+	font-size:15px;
+        color:#999;
+        font-weight:100;
+        padding:0;
+        visibility:hidden;
+        display: none;
+	}
+
+#container .grid li  span{
+	font-size:12px;
+	color:#C00;
+	}
+
+#container .grid li  p{
+	visibility:hidden;
+	height:0;
+	width:auto;
+	padding:0;
+	margin:0;
+	}
+
+}

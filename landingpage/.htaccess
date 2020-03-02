@@ -1,0 +1,130 @@
+<IfModule pagespeed_module>
+    ModPagespeed off
+</IfModule>
+
+# Enable Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+</IfModule>
+<IfModule mod_gzip.c>
+  mod_gzip_on Yes
+  mod_gzip_dechunk Yes
+  mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+  mod_gzip_item_include handler ^cgi-script$
+  mod_gzip_item_include mime ^text/.*
+  mod_gzip_item_include mime ^application/x-javascript.*
+  mod_gzip_item_exclude mime ^image/.*
+  mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+
+# Leverage Browser Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  ExpiresByType text/cache-manifest         "access plus 0 seconds"
+
+  	# Html
+  	ExpiresByType text/html                 "access plus 0 seconds"
+
+  	# Data
+  	ExpiresByType text/xml                  "access plus 0 seconds"
+  	ExpiresByType application/xml           "access plus 0 seconds"
+  	ExpiresByType application/json          "access plus 0 seconds"
+
+  	# Feed
+  	ExpiresByType application/rss+xml       "access plus 1 hour"
+  	ExpiresByType application/atom+xml      "access plus 1 hour"
+
+  	# Favicon
+  	ExpiresByType image/x-icon              "access plus 1 month"
+
+  	# Media: images, video, audio
+  	ExpiresByType image/gif                 "access plus 1 week"
+  	ExpiresByType image/png                 "access plus 1 year"
+  	ExpiresByType image/jpg                 "access plus 1 year"
+  	ExpiresByType image/jpeg                "access plus 1 year"
+  	ExpiresByType video/ogg                 "access plus 1 week"
+  	ExpiresByType audio/ogg                 "access plus 1 week"
+  	ExpiresByType video/mp4                 "access plus 1 week"
+  	ExpiresByType video/webm                "access plus 1 week"
+
+  	# HTC files
+  	ExpiresByType text/x-component          "access plus 1 month"
+
+  	# Webfonts
+  	ExpiresByType application/x-font-ttf    "access plus 1 month"
+  	ExpiresByType font/opentype             "access plus 1 month"
+  	ExpiresByType application/x-font-woff   "access plus 1 month"
+  	ExpiresByType image/svg+xml             "access plus 1 month"
+  	ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+
+  	# CSS / JS
+  	ExpiresByType text/css                  "access plus 1 month"
+  	ExpiresByType text/javascript           "access plus 1 month"
+  	ExpiresByType application/javascript    "access plus 1 month"
+  	ExpiresByType text/x-javascript         "access 1 month"
+
+
+  	# Others
+    ExpiresByType application/pdf         "access plus 1 month"
+    ExpiresByType application/x-shockwave-flash "access plus 1 month"
+    ExpiresDefault "access 1 month"
+
+</IfModule>
+<IfModule mod_headers.c>
+  <filesmatch "\.(ico|flv|jpg|jpeg|png|gif|css|swf)$">
+  Header set Cache-Control "max-age=2678400, public"
+  </filesmatch>
+  <filesmatch "\.(html|htm)$">
+  Header set Cache-Control "max-age=7200, private, must-revalidate"
+  </filesmatch>
+  <filesmatch "\.(pdf)$">
+  Header set Cache-Control "max-age=86400, public"
+  </filesmatch>
+  <filesmatch "\.(js)$">
+    Header set Cache-Control "max-age=2678400, private"
+  </filesmatch>
+  <filesmatch "\.(css)$">
+      Header set Cache-Control "max-age=2678400, private"
+    </filesmatch>
+</IfModule>
+
+
+<IfModule mod_rewrite.c>
+
+    Options -Indexes
+
+    ErrorDocument 404 https://www.serranegra.com.br/404/
+    ErrorDocument 403 https://www.serranegra.com.br/404/
+	
+	RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} (.*)$
+
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^(.*)$ https://www.https://www.villadoeden.com.br/landingpage/$1 [R=permanent,L]
+
+
+	RewriteRule ^obrigado/?$ obrigado.html [NC,L]
+
+
+</IfModule>
